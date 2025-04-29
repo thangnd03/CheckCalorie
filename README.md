@@ -1,50 +1,167 @@
-# Welcome to your Expo app 👋
+# CheckCalorie
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile application built with React Native and Expo that helps users track and manage their calorie intake. The app uses Google's Generative AI to analyze food images and provide nutritional information.
 
-## Get started
+## Features
 
-1. Install dependencies
+- 📸 Image-based food recognition
+- 🔍 Detailed nutritional information
+- 📊 Calorie tracking
+- 🎯 User-friendly interface
+- 📱 Cross-platform support (iOS & Android)
 
-   ```bash
-   npm install
-   ```
+## Tech Stack
 
-2. Start the app
+- React Native
+- Expo
+- TypeScript
+- Jotai (State Management)
+- Google Generative AI
+- Expo Router
+- React Navigation
 
-   ```bash
-    npx expo start
-   ```
+## Prerequisites
 
-In the output, you'll find options to open the app in a
+- Node.js (v14 or higher)
+- npm or yarn
+- Expo CLI
+- iOS Simulator (for iOS development)
+- Android Studio (for Android development)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Installation
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+1. Clone the repository:
 ```bash
-npm run reset-project
+git clone [your-repository-url]
+cd CheckCalorie
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
 
-## Learn more
+3. Start the development server:
+```bash
+npm start
+# or
+yarn start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## Available Scripts
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- `npm start` - Start the Expo development server
+- `npm run android` - Run the app on Android
+- `npm run ios` - Run the app on iOS
+- `npm run web` - Run the app on web
+- `npm run test` - Run tests
+- `npm run lint` - Run linter
 
-## Join the community
+## Project Structure
 
-Join our community of developers creating universal apps.
+```
+CheckCalorie/
+├── app/                 # Main application code
+│   ├── api/            # API related code
+│   ├── _layout.tsx     # Root layout component
+│   ├── index.tsx       # Home screen
+│   └── result.tsx      # Results screen
+├── atoms/              # Jotai atoms for state management
+├── assets/             # Static assets (images, fonts, etc.)
+├── .expo/              # Expo configuration
+└── .vscode/            # VS Code settings
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+# CheckCalorie (Phiên bản Tiếng Việt)
+
+Ứng dụng di động được xây dựng bằng React Native và Expo giúp người dùng theo dõi và quản lý lượng calo nạp vào cơ thể. Ứng dụng sử dụng Google Generative AI để phân tích hình ảnh thức ăn và cung cấp thông tin dinh dưỡng.
+
+## Tính năng
+
+- 📸 Nhận diện thức ăn qua hình ảnh
+- 🔍 Thông tin dinh dưỡng chi tiết
+- 📊 Theo dõi lượng calo
+- 🎯 Giao diện thân thiện với người dùng
+- 📱 Hỗ trợ đa nền tảng (iOS & Android)
+
+## Công nghệ sử dụng
+
+- React Native
+- Expo
+- TypeScript
+- Jotai (Quản lý trạng thái)
+- Google Generative AI
+- Expo Router
+- React Navigation
+
+## Yêu cầu hệ thống
+
+- Node.js (phiên bản 14 trở lên)
+- npm hoặc yarn
+- Expo CLI
+- iOS Simulator (để phát triển iOS)
+- Android Studio (để phát triển Android)
+
+## Cài đặt
+
+1. Clone repository:
+```bash
+git clone [your-repository-url]
+cd CheckCalorie
+```
+
+2. Cài đặt các thư viện:
+```bash
+npm install
+# hoặc
+yarn install
+```
+
+3. Khởi động máy chủ phát triển:
+```bash
+npm start
+# hoặc
+yarn start
+```
+
+## Các lệnh có sẵn
+
+- `npm start` - Khởi động máy chủ phát triển Expo
+- `npm run android` - Chạy ứng dụng trên Android
+- `npm run ios` - Chạy ứng dụng trên iOS
+- `npm run web` - Chạy ứng dụng trên web
+- `npm run test` - Chạy các bài kiểm tra
+- `npm run lint` - Kiểm tra lỗi code
+
+## Cấu trúc dự án
+
+```
+CheckCalorie/
+├── app/                 # Mã nguồn chính của ứng dụng
+│   ├── api/            # Mã nguồn liên quan đến API
+│   ├── _layout.tsx     # Thành phần layout gốc
+│   ├── index.tsx       # Màn hình chính
+│   └── result.tsx      # Màn hình kết quả
+├── atoms/              # Jotai atoms cho quản lý trạng thái
+├── assets/             # Tài nguyên tĩnh (hình ảnh, font chữ, v.v.)
+├── .expo/              # Cấu hình Expo
+└── .vscode/            # Cài đặt VS Code
+```
+
+## Đóng góp
+
+1. Fork repository
+2. Tạo nhánh tính năng (`git checkout -b feature/TinhNangMoi`)
+3. Commit các thay đổi (`git commit -m 'Thêm tính năng mới'`)
+4. Đẩy lên nhánh (`git push origin feature/TinhNangMoi`)
+5. Tạo Pull Request
